@@ -7,8 +7,8 @@
 #include <SPI.h>
 
 // Wi-Fi network credentials
-const char* ssid = "Kusch";
-const char* password = "kuschfamily";
+const char* ssid = "";
+const char* password = "";
 
 // Create sensor objects
 Adafruit_BME680 bme;
