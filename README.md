@@ -13,3 +13,44 @@ The caveat is I was having trouble with the data recording, and thus that featur
 
 ### Build Your Own
 
+#### BME680 Sensor
+
+VCC to 3.3V
+GND to GND
+SCL to SCL (A5 on most Arduinos)
+SDA to SDA (A4 on most Arduinos)
+
+
+#### SGP30 Sensor
+
+VCC to 3.3V
+GND to GND
+SCL to SCL (same as BME680)
+SDA to SDA (same as BME680)
+
+
+#### MQ Sensors
+
+VCC to 5V
+GND to GND
+Analog output to A0, A1, A2, A3 respectively
+
+
+#### SD Card Module
+
+CS to Digital Pin 10
+MOSI to Digital Pin 11
+MISO to Digital Pin 12
+SCK to Digital Pin 13
+VCC to 5V
+GND to GND
+
+
+
+#### Setup Instructions
+
+- Upload the provided code to your Arduino board.
+- Connect to the Wi-Fi network specified in the code.
+- Access the sensor data through the Arduino's IP address.
+- Use the /startRecording endpoint to begin data collection.
+- Use the /calibrate endpoint to calibrate the sensors.
